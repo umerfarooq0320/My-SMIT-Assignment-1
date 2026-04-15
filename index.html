@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <style>
+        body{
+            background-color: #2196f39c;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1{
+            color: #b21c1cb3;
+            font-size: 50px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        hr{
+            border: 1px solid white;
+        }
+
+        /* Navbar */
+        .one{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 50px;
+            font-size: 22px;
+            padding: 10px 0;
+        }
+
+        .one a{
+            text-decoration: none;
+            color: purple;
+        }
+
+        .one a:hover{
+            text-decoration: underline;
+        }
+
+        
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .text{
+            width: 60%;
+        }
+
+        h2{
+            font-size: 28px;
+        }
+
+        p{
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .image img{
+            width: 540px;
+            height: auto;
+        }
+
+        
+        @media(max-width: 768px){
+            .container{
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .text{
+                width: 100%;
+            }
+
+            .image img{
+                margin-top: 20px;
+                width: 80%;
+            }
+        }
+      
+        .btn{
+            
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            gap: 5px;
+             position: relative;
+    animation: moveBtn 3s infinite alternate ;
+        }
+           @keyframes moveBtn {
+    from {
+        left: 0;
+    }
+    to {
+        left: 200px;
+    }
+   
+}
+        .btn button{
+            border-radius: 20px;
+            width: 100px;
+            height: 30px;
+            background-color: #5fb7d4;
+            color: white;
+            border: 2px solid blue;
+           
+
+        }
+     
+        .btn p{
+            margin: 0;
+                font-size: x-large;
+                font-weight: 700;
+                
+                
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>INFOMAX COMPUTER ACADEMY</h1>
+
+    <hr>
+
+    <ul class="one">
+        <li><strong><a href="index.html">Home</a></strong></li>
+        <li><strong><a href="about.html">About Us</a></strong></li>
+        <li><strong><a href="courses.html">Courses</a></strong></li>
+        <li><strong><a href="https://www.youtube.com/results?search_query=html" target="_blank">Related Videos</a>
+        </strong></li>
+    </ul>
+
+    <hr>
+
+    <div class="container">
+        <div class="text">
+            <h2>Who We Are?</h2>
+            <p>
+                Infomax is Computer Academy which provides high quality computer education 
+                at a very high standard at a low cost. ICA's mission is to create a pool of 
+                high quality software professionals who will meet the demanding needs of 
+                multinational organizations for tomorrow's challenges.
+            </p>
+
+            <h2>What We Offer?</h2>
+            <p>
+                We are committed to provide technology-based education to all sections of 
+                the society, for the overall development of the country through continual 
+                improvements of quality management system to achieve our objectives of 
+                promoting younger generation towards prosperity.
+            </p>
+        </div>
+
+        <div class="image">
+            <img src="st1.png" alt="Student">
+        </div>
+    </div>
+<div class="btn">
+    <p>To get Enrolled and Become the Part of Informax </p>
+   <button>Click Here</button>
+</div>
+</body>
+</html>
